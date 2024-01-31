@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="x-ua-compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="keywords"
+      content="холодильники, бытовая техника, кухонные приборы, элитные товары, 
+    выбор, официальный сайт, лучшие цены"
+    />
+    <meta name="description" content=" Официальный интернет-магазин
+    выдающегося производителя Smeg, предлагает элитные изделия бытовой техники.
+    Наслаждайтесь широким ассортиментом: холодильники, духовые шкафы, варочные
+    панели и другие кухонные приспособления по самым выгодным ценам. " />
+
+    <!-- title -->
+    <title>>Официальный интернет-магазин SMEG</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- media-query -->
+    <link rel="stylesheet" href="media-query.css" />
+    <!-- icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poiret+One&family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- Start-header -->
+    <header >
+      <div class="title-header">
+        Уважаемые покупатели, сроки поставки товаров со статусом "Предзаказ"
+        уточняйте у менеджеров!
+      </div>
+      <div class="links">
+        <div class="container">
+          <ul class="list-1">
+            <li><a href="#">О компании Smeg</a></li>
+            <li><a href="#">Коллекции</a></li>
+            <li>
+              <a href="#">Доставка и оплата</a>
+            </li>
+            <li>
+              <a href="#">Уголок потребителя</a>
+            </li>
+            <li>
+              <a href="#">Сервис</a>
+            </li>
+            <li><a href="#">Дизайнерам</a></li>
+            <li>
+              <a href="#">Проектный бизнес</a>
+            </li>
+            <li>
+              <a href="#">Программа лояльности</a>
+            </li>
+          </ul>
+          <ul class="list-2">
+            <li><a href="#">Вход</a></li>
+            <li><a href="#">Регистрация</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="header-2">
+        <div class="icons">
+          <div class="icon" id="menu-icon" onclick="toggleMenu()">☰</div>
+        </div>
+        <div class="container" >
+          <div class="logo">
+            <img src="image/logo.png" alt="#" />
+          </div>
+          <div class="text">
+            <p>официальный магазин Smeg в России</p>
+          </div>
+          <div class="call">
+            <a href="#">8 800 707-00-29</a>
+
+            <div class="phone">
+              <i class="fa-solid fa-phone"></i>
+              <span>Обратный звонок</span>
+            </div>
+          </div>
+          <div class="work-time">
+            <p>
+              Пн – Пт- с 10:00 до 18:00 <br />
+              Вс - выходной <br />
+              Рабочая суббота 27 января (предварительная запись)
+            </p>
+          </div>
+
+          <div class="search-header">
+            <div class="search">
+              <i
+                class="fa-solid fa-magnifying-glass"
+                onclick="toggleSearch()"
+              ></i>
+              <i class="fa-solid fa-phone"></i>
+              <input
+                type="text"
+                id="search-input"
+                placeholder="Введите запрос..."
+              />
+              <button id="search-button" onclick="search()">Найти</button>
+            </div>
+            <div class="cart">
+              <span></span>
+
+              <p>пусто</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="navbar" id="navbar">
+          <img src="image/logo.navbar.png" alt="#" class="scroll-image">
+        <div class="dropdown">
+        
+          <button class="dropbtn">
+            Бытовая техника
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="dropdown-content-0">
+            <div class="menu">
+              <a href="#">Духовые шкафы</a>
+              <a href="#">Микроволновые печи</a>
+              <a href="#">Посудомоечные машины</a>
+              <a href="#">Кофемашины</a>
+              <a href="#">Варочные центры</a>
+              <a href="#">Вакууматоры</a>
+              <a href="#">Ящики сомелье</a>
+            </div>
+            <div class="menu">
+              <a href="#">Варочные панели</a>
+              <a href="#">Холодильники и винные шкафы</a>
+              <a href="#">тиральные и сушильные машины</a>
+              <a href="#">Вытяжки</a>
+              <a href="#">Смесители и мойки</a>
+              <a href="#">Подогреватели посуды</a>
+              <a href="#">Аксессуары</a>
+            </div>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">
+            Малая техника для кухни
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="#">Вспениватели для молока</a>
+            <a href="#">Блендеры</a>
+            <a href="#">Кофеварки и кофемашины</a>
+            <a href="#">Кофемолки</a>
+            <a href="#">Миксеры</a>
+            <a href="#">Соковыжималки</a>
+            <a href="#">Тостеры</a>
+            <a href="#"> Чайники электрические</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">
+            Посуда
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="dropdown-content" style="width: 130px">
+            <a href="#">Кастрюли</a>
+            <a href="#">Сковороды</a>
+            <a href="#">Крышки</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">
+            La Pavoni
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="dropdown-content" style="width: 248px">
+            <a href="#">Леверные кофемашины</a>
+            <a href="#">Полупрофессиональные кофемашины</a>
+            <a href="#">Кофемолки</a>
+          </div>
+        </div>
+
+        <button class="dropbtn-0">HORECA</button>
+
+        <button class="dropbtn-0">SMEG Outlet</button>
+
+        <button class="dropbtn-1">
+          Акции
+          <a href="#">4</a>
+        </button>
+        <button class="dropbtn-0">Магазины</button>
+      
+      </div>
+
+      <!-- <div class="icons">
+        <div class="icon" id="menu-icon" onclick="toggleMenu()">☰</div>
+      </div> -->
+
+      <div class="menu-0" id="menu-0">
+        <div class="close-icon" onclick="closeMenu()">✖</div>
+        <p>Menu</p>
+
+        <a href="#" onclick="openSubMenu('submenu1')"> Бытовая техника </a>
+
+        <a href="#" onclick="openSubMenu('submenu2')">
+          Малая техника для кухни
+        </a>
+
+        <a href="#" onclick="openSubMenu('submenu3')"> Посуда </a>
+        <a href="#" onclick="openSubMenu('submenu4')"> La Pavoni </a>
+        <a href="#" style="background-image: none">HORECA</a>
+
+        <hr />
+
+        <ul class="list-3">
+          <li>SMEG Outlet</li>
+          <li>Акции</li>
+          <li>Магазины</li>
+          <li>О компании Smeg</li>
+          <li>Коллекции</li>
+          <li>Доставка и оплата</li>
+          <li>Уголок потребителя</li>
+          <li>Сервис</li>
+          <li>Дизайнерам</li>
+          <li>Проектный бизнес</li>
+          <li>Программа лояльности</li>
+        </ul>
+      </div>
+
+      <div class="submenu" id="submenu1">
+        <a href="#">Духовые шкафы</a>
+        <a href="#">Варочные панели</a>
+        <a href="#">Микроволновые печи</a>
+        <a href="#">Холодильники и винные шкафы</a>
+        <a href="#">Посудомоечные машины</a>
+        <a href="#">Стиральные и сушильные машины</a>
+        <a href="#">Кофемашины</a>
+        <a href="#">Вытяжки</a>
+        <a href="#">Варочные центры</a>
+        <a href="#">Смесители и мойки</a>
+        <a href="#">Вакууматоры</a>
+        <a href="#">Подогреватели посуды</a>
+        <a href="#">Ящики сомелье</a>
+        <a href="#">Аксессуары</a>
+
+        <div class="back-arrow" onclick="goBack('menu-0')">← назад</div>
+      </div>
+
+      <div class="submenu" id="submenu2">
+        <a href="#">Вспениватели для молока</a>
+        <a href="#">Блендеры</a>
+        <a href="#">Кофеварки и кофемашины</a>
+        <a href="#">Кофемолки</a>
+        <a href="#">Миксеры</a>
+        <a href="#">Соковыжималки</a>
+        <a href="#">Тостеры</a>
+        <a href="#">Чайники электрические</a>
+        <div class="back-arrow" onclick="goBack('menu-0')">← назад</div>
+      </div>
+      <div class="submenu" id="submenu3">
+        <a href="#">Кастрюли</a>
+        <a href="#">Сковороды</a>
+        <a href="#">Крышки</a>
+        <div class="back-arrow" onclick="goBack('menu-0')">← назад</div>
+      </div>
+      <div class="submenu" id="submenu4">
+        <a href="#">Леверные кофемашины</a>
+        <a href="#">Полупрофессиональные кофемашины</a>
+        <a href="#">Кофемолки</a>
+
+        <div class="back-arrow" onclick="goBack('menu-0')">← назад</div>
+      </div>
+    </header>
+
+    <!-- End-header -->
+
+    <!-- Start main -->
+    <section class="main">
+      <div class="slider">
+        <img src="image/swiper-1.jpg" alt="#" />
+        <img src="image/swiper-2.jpg" alt="#" />
+        <img src="image/swiper-3.jpg" alt="#" />
+      </div>
+      <div class="numbers"></div>
+
+      <div class="main-0">
+        <div class="container">
+          <div class="main-title">
+            <p>Техника премиум-класса<strong>SMEG</strong></p>
+          </div>
+
+          <div class="content">
+            <div class="text-0">
+              <p>
+                Продукция SMEG отличается совершенным сочетанием высоких
+                технологий и стиля, неподвластным течению времени. Каждая новая
+                серия техники – это гармония продуманной функциональности,смелой
+                формы и потрясающего удобства. Современное производство,
+                лабораторный контроль качества и долговечность – неоспоримые
+                преимущества продукции итальянского бренда.
+              </p>
+            </div>
+
+            <img src="image/block1-bg.png" alt="#" />
+          </div>
+        </div>
+
+        <div class="text-1">
+          <p>
+            Мы рады приветствовать Вас в официальном интернет-магазине SMEG в
+            России!!
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <div class="main-content">
+      <div class="main-card">
+        <div class="card">
+          <img src="image/card-1.jpg" alt="#" />
+          <p>Духовые шкафы</p>
+        </div>
+
+        <div class="card">
+          <img src="image/card-2.jpg" alt="#" />
+          <p>Варочные панели</p>
+        </div>
+
+        <div class="card">
+          <img src="image/card-3.jpg" alt="#" />
+          <p>Варочные центры</p>
+        </div>
+
+        <div class="card">
+          <img src="image/card-4.jpg" alt="#" />
+          <p>Вытяжки</p>
+        </div>
+
+        <div class="card">
+          <img src="image/card-5.jpg" alt="#" />
+          <p>Мойки</p>
+        </div>
+
+        <div class="card">
+          <img src="image/card-6.jpg" alt="#" />
+          <p>Смесители</p>
+        </div>
+
+        <div class="card">
+          <img src="image/card-7.jpg" alt="#" />
+          <p>Посудомоечные машины</p>
+        </div>
+
+        <div class="card">
+          <img src="image/card-8.jpg" alt="#" />
+          <p>Стиральные машины</p>
+        </div>
+
+        <div class="card">
+          <img src="image/card-10.jpg" alt="#" />
+          <p>Холодильники</p>
+        </div>
+
+        <div class="card">
+          <img src="image/card-10.jpg" alt="#" />
+          <p>Винные шкафы</p>
+        </div>
+
+        <div class="card">
+          <img src="image/card-11.jpg" alt="#" />
+          <p>Кофемашины</p>
+        </div>
+        <div class="card">
+          <img src="image/card-12.jpg" alt="#" />
+          <p>Миксеры</p>
+        </div>
+
+        <div class="card">
+          <img src="image/card-13.jpg" alt="#" />
+          <p>Блендеры</p>
+        </div>
+
+        <div class="card">
+          <img src="image/card-14.jpg" alt="#" />
+          <p>Чайники</p>
+        </div>
+
+        <div class="card">
+          <img src="image/card-15.jpg" alt="#" />
+          <p>Тостеры</p>
+        </div>
+        <div class="card">
+          <img src="image/card-16.jpg" alt="#" />
+          <p>Тостеры</p>
+        </div>
+      </div>
+    </div>
+
+    <section class="wrapper">
+      <div class="container">
+        <div class="banner">
+          <div class="banner-title">
+            <p>Для дома</p>
+          </div>
+          <div class="text">
+            <p>
+              Решая, какую технику выбрать для кухни, обязательно ознакомьтесь с
+              ассортиментом SMEG. В нашем интернет- магазине Вы сможете найти
+              полный модельный ряд приборов, представленных на российском рынке.
+            </p>
+          </div>
+          <div class="image">
+            <img src="image/banner-0.jpg" alt="" />
+          </div>
+        </div>
+        <div class="banner">
+          <div class="banner-title">
+            <p>Для бизнеса</p>
+          </div>
+          <div class="text">
+            <p>
+              В каталоге представлено профессиональное оборудование для сегмента
+              HoReCa. Наши специалисты учтут все пожелания и подберут
+              оптимальные приборы, которые станут одним из слагаемых успеха
+              Вашего бизнеса.
+            </p>
+          </div>
+          <div class="image">
+            <img src="image/banner-1.jpg" alt="" />
+          </div>
+        </div>
+
+        <div class="footer-main">
+          <div class="title">
+            <p>Совершенные формы <strong>SMEG</strong></p>
+          </div>
+          <div class="landing">
+            <div class="image-2">
+              <img src="image/50-style.png" alt="#" />
+            </div>
+            <div class="text-2">
+              <p>
+                Отличительная особенность бытовой техники SMEG – ее безупречный
+                итальянский стиль. Приборы выпускаются в нескольких сериях:
+                Coloniale, Piano Design, Linea и т. д. Отдельного внимания
+                заслуживают холодильники <strong>в стиле 50-х годов</strong>.
+                Винтажный дизайн с его волнообразными линиями и яркими цветами
+                гармонично сочетается с новейшими технологиями .В результате Вы
+                получаете не просто бытовой прибор, а настоящее произведение
+                искусства.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="gerllay">
+      <div class="image">
+        <img src="image/main02.jpg" alt="#" />
+      </div>
+      <div class="container">
+        <div class="gel-1">
+          <div class="text">
+            <p>
+              Чего только стоят оригинальные цветные холодильники из серии
+              FAB28! При взгляде на них складывается впечатление, что они
+              доминируют над окружающим миром. Полосатый, джинсовый, ярко-синий,
+              красный, розовый, цвет лайма – выбирайте из палитры свой
+              холодильник премиум класса! Дизайнеры SMEG разработали и другие
+              линейки бытовых приборов в этой же стилистике: стиральные и
+              посудомоечные машины, мини-бары, тостеры, миксеры. 50-ые в тренде!
+            </p>
+          </div>
+          <div class="title">
+            <p>С нами удобно!</p>
+          </div>
+        </div>
+
+        <div class="gel-2">
+          <div class="row">
+            <div class="text">
+              <p>
+                <strong
+                  >Покупая технику премиум-класса SMEG в официальном
+                  интернет-магазине, Вы получаете:</strong
+                >
+              </p>
+            </div>
+            <ul class="list">
+              <li>общение с Производителем без посредников;</li>
+              <li>возможность выбора из линейки самых последних моделей;</li>
+              <li>индивидуальный подход;</li>
+              <li>профессиональную консультацию;</li>
+              <li>возможность посмотреть товар перед покупкой;</li>
+              <li>выбор наиболее удобных и надежных способов оплаты;</li>
+              <li>
+                возможность покупки по предзаказу с соблюдением сроков поставки;
+              </li>
+            </ul>
+          </div>
+
+          <div class="box-pay">
+            <p>Мы принимаем:</p>
+            <div class="image">
+              <img src="image/payment.png" alt="#" />
+            </div>
+          </div>
+        </div>
+        <div class="footer-gel">
+          <div class="image">
+            <img src="image/kh-0.jpg" alt="#" />
+          </div>
+          <div class="text">
+            <p>
+              Кроме того, все товары, в том числе и легендарные холодильники
+              FAB, Вы можете увидеть в шоу-руме в Москве, Санкт-Петербурге,
+              Краснодаре, Екатеринбурге или Новосибирске.
+            </p>
+
+            <p>
+              Если у Вас есть вопросы, задайте их нашим специалистам по телефону
+              <strong>8 (800) 707-00-29</strong> , используя форму обратной
+              связи или заказав <a href="#">Обратный звонок</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+
+    <section class="footer">
+      <div class="container">
+        <div class="header-footer">
+          <div class="logo">
+            <img src="image/logo.png" alt="#" />
+          </div>
+          <div class="text">
+            <p>официальный магазин <br> Smeg в России</p>
+          </div>
+          <div class="call">
+            <a href="#">8 800 707-00-29</a>
+
+            <div class="phone">
+              <i class="fa-solid fa-phone"></i>
+              <span>Обратный звонок</span>
+            </div>
+          </div>
+          <div class="work-time">
+            <p>
+              Пн – Пт- с 10:00 до 18:00 <br />
+              Вс - выходной <br />
+              <span>Рабочая суббота 27 января (предварительная запись)</span>
+            </p>
+          </div>
+
+          <div class="search-footer">
+            <input type="text" id="search-input" placeholder="Поиск по сайту""
+            />
+          </div>
+        </div>
+
+        <div class="med-footer">
+          <div class="adress">
+            <div class="title-adress">
+              <p>Москва</p>
+            </div>
+            <div class="myText">
+              Адрес: 117105, г. Москва,<br />
+              Варшавское шоссе, д. 1А, БЦ "W-Plaza",левое крыло, 6 этаж,<br />
+              офис А-615.<br />
+              Телефон: 8 (800) 707-00-29 , <br />
+
+              Время работы: пн-сб* с 10-00 до 18-00 * одна в месяц
+            </div>
+          </div>
+          <div class="adress">
+            <div class="title-adress">
+              <p>Санкт-Петербург</p>
+            </div>
+
+            <div class="myText">
+              Адрес: 191014, г. Санкт-Петербург,,<br />
+              Лиговский проспект, д.13/15, <br />
+              офис 502,<br />
+              Телефоны: <br />
+              - офис: 8-800-707-00-29 доб. 205 <br />
+
+              - магазин: 8-800-707-00-29 доб. 204 <br />
+              Время работы: пн-пт с 10-00 до 18-00
+            </div>
+          </div>
+          <div class="adress">
+            <div class="title-adress">
+              <p>Екатеринбург</p>
+            </div>
+            <div class="myText">
+              Адрес: 620075, г. Екатеринбург,<br />
+              пр-т Ленина 50-б, офис 213<br />
+              Телефон: <br />
+              - офис: 8-800-707-00-29 доб. 303 <br />
+
+              - магазин: 8-800-707-00-29 доб. 305 <br />
+              Время работы: пн-пт с 10-00 до 19-00
+            </div>
+          </div>
+          <div class="adress">
+            <div class="title-adress">
+              <p>Краснодар</p>
+            </div>
+            <div class="myText">
+              Адрес: 350049, г. Краснодар,<br />
+              ул. Пластунская, д.28, БЦ «Darsi», оф.202<br />
+              Телефоны:<br />
+              - офис: 8-800-707-00-29 доб. 803, <br />
+              - магазин: 8-800-707-00-29 доб. 804 и 805 <br />
+              Время работы: пн-пт с 09-00 до 20-00
+            </div>
+          </div>
+          <div class="adress">
+            <div class="title-adress">
+              <p>Новосибирск</p>
+            </div>
+            <div class="myText">
+              Адрес: 630007, г. Новосибирск,<br />
+              Красный проспект, д. 22<br />
+              Телефоны:<br />
+              - офис: 8-800-707-00-29 доб. 404<br />
+              - магазин: 8-800-707-00-29 доб. 405, 406 <br />
+              Время работы: пн-сб с 09-00 до 20-00
+            </div>
+          </div>
+        </div>
+
+       
+      </div>
+        
+       
+        <div class="contact-footer">
+        <div class="container">
+          <ul class="list-footer">
+            <li>О компании Smeg</li>
+            <li>Доставка и оплата</li>
+            <li>Уголок потребителя</li>
+            <li>Сервис</li>
+          </ul>
+          <div class="copy-right">
+            <p>© 2013 - 2024 SMEG S.p.A., Официальный магазин SMEG</p>
+          </div>
+
+        </div>
+    
+      </div>
+    </section>
+
+    <script src="main.js"></script>
+  </body>
+</html>
